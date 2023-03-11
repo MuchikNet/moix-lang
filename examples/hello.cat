@@ -1,0 +1,12 @@
+-- File: hello.cat
+-- Name: Hello World
+
+cat Main
+    use HelloWorld as HW
+    mor main:
+        HW.say
+
+cat HelloWorld
+    use IO
+    ob Message: IO.in -- default: Raw
+    mor say: Message -> IO.out
